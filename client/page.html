@@ -1,0 +1,922 @@
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="sumo-hide-sidebar" content="true" />
+<meta name="description"
+    content="The Media Research Center has led the fight against media bias for 30 years, but three years ago we also launched FREE SPEECH AMERICA to lead the charge against censorship of conservatives by Facebook, Twitter, Amazon, Google, YouTube, and others." />
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@theMRC">
+<meta name="twitter:title" content="Welcome to the MRC and Free Speech America!">
+<meta name="twitter:description"
+    content="The Media Research Center has led the fight against media bias for 30 years, but three years ago we also launched FREE SPEECH AMERICA to lead the charge against censorship of conservatives by Facebook, Twitter, Amazon, Google, YouTube, and others.">
+<meta name="twitter:image" content=" https://cdn.mrc.org/U/C/2020/JAN/LEVIN/MarkLevin_LandingPage_Revised.png">
+<!-- Open Graph data -->
+<meta property="og:title" content="Welcome to the MRC and Free Speech America!" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://info.mrc.org/levin" />
+<meta property="og:image:secure_url"
+    content=" https://cdn.mrc.org/U/C/2020/JAN/LEVIN/MarkLevin_LandingPage_Revised.png" />
+<meta property="og:image" content=" https://cdn.mrc.org/U/C/2020/JAN/LEVIN/MarkLevin_LandingPage_Revised.png" />
+<meta property="og:description"
+    content="The Media Research Center has led the fight against media bias for 30 years, but three years ago we also launched FREE SPEECH AMERICA to lead the charge against censorship of conservatives by Facebook, Twitter, Amazon, Google, YouTube, and others." />
+<meta property="og:site_name" content="Media Research Center" />
+<meta property="fb:admins" content="10498053716" /><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3366679-6"></script>
+<!-- <script src="https://cdn.mrc.org/static/js_assets/censortrackcasetotal.js"></script> -->
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-3366679-6');
+</script>
+<script src="https://kit.fontawesome.com/a42d871d6c.js" crossorigin="anonymous"></script>
+<link href="test.html" />
+<style type="text/css">
+    /* New CSS */
+
+    /* span {
+        font-family: 'Nunito', sans-serif;
+        font-size: 2rem;
+    } */
+
+    /* .censortrackCaseTotal {
+        color: #212529;
+    } */
+
+    .totalCases {
+        border-radius: .5rem;
+        /* box-shadow: 0px 4px 4px rgba(66, 47, 47, 0.25); */
+        text-align: center;
+        padding: 3rem 1rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .totalCases--body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 0.5rem;
+        color: white;
+        font-weight: 500;
+    }
+
+    .totalCases--body {
+        padding-bottom: 10px;
+        width: auto;
+    }
+
+    .totalCases--body--number {
+        display: grid;
+        grid-template-columns: 2rem 0.5rem 2rem 2rem 2rem;
+        column-gap: 0.4rem;
+    }
+
+    .totalCases--body--number--cell {
+        width: 2rem;
+        height: 2.5rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(0deg, #ccc 0%, #fbfbfb 15%, #fbfbfb 85%, #ccc 100%);
+    }
+
+    /* .totalCases--body--number--cell--middleLine {
+        position: absolute;
+        content: "";
+        background: black;
+        height: 1px;
+        width: 100%;
+        left: 0;
+        top: calc(50% - (1px / 2));
+        z-index: 1;
+    } */
+
+    .totalCases--body--number--cell--smallBox right {
+        width: 4px;
+        position: absolute;
+        content: "";
+        background: linear-gradient(0deg, #ccc 0%, #fbfbfb 31%, #fbfbfb 65%, #ccc 100%);
+        height: 5px;
+        top: calc(50% - (5px / 2));
+        z-index: 2;
+    }
+
+    .totalCases--body--number--cell--smallBox left {
+        width: 4px;
+        position: absolute;
+        content: "";
+        background: linear-gradient(0deg, #ccc 0%, #fbfbfb 31%, #fbfbfb 65%, #ccc 100%);
+        height: 5px;
+        top: calc(50% - (5px / 2));
+        z-index: 2;
+    }
+
+    .totalCases--body--number--comma {
+        position: relative;
+    }
+
+    .totalCases--body--number--cell span {
+        font-family: Nunito;
+        padding-top: 0.3rem;
+        line-height: normal;
+        font-size: 3rem;
+        font-weight: bold;
+        background: -webkit-linear-gradient(240deg, #ff1f04 0, #b21f04 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .totalCases--body--number--comma span {
+        font-family: Nunito;
+        line-height: normal;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        left: 0;
+        top: 3px;
+    }
+
+    ::after {
+        background-image: url("https://censortrack.org/themes/custom/censortrack/images/ProfileCountBG.png");
+        background-size: cover;
+        background-position: center;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .ct-button {
+        display: block;
+        background-color: #2226ce;
+        color: #fff;
+        font-weight: 700;
+        padding: 10px;
+        width: 13rem;
+        text-align: center;
+        border-radius: 2rem;
+        text-decoration: none;
+    }
+
+    p,
+    li {
+        font-size: 18px;
+    }
+
+
+    .censortrackCaseTotal {
+        width: 100%;
+        max-height: 310px;
+        margin: 0 auto;
+        font-size: 50px;
+    }
+
+    .ct-button:hover {
+        text-decoration: none;
+        border: #2226ce;
+        box-sizing: border-box;
+        background-color: #1f1f1f;
+        /* color: #2226ce; */
+    }
+
+    .articles {
+        margin-top: 2rem;
+    }
+
+    strong {
+        color: #2226ce;
+        font-weight: 300;
+    }
+
+    /* End of New CSS */
+
+
+    @import url('https://fonts.googleapis.com/css?family=Nunito');
+
+    .submit input {
+        color: #fff;
+        background: #002f87;
+        border-color: #002f87;
+    }
+
+    body {
+        background-color: rgba(0, 0, 0, 0);
+        font-family: 'Nunito', sans-serif;
+
+        font-weight: 300;
+    }
+
+    .form-field {
+        font-size: 18px;
+        color: #333;
+        clear: both;
+    }
+
+    .form p {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .form-field input[type=date],
+    .form-field input[type=email],
+    .form-field input[type=number],
+    .form-field input[type=tel],
+    .form-field input[type=text],
+    .form-field input[type=url],
+    .form-field select,
+    .form-field textarea {
+        display: block;
+        width: 98% !important;
+        height: 34px;
+        margin: 5px 0 20px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        font-family: 'Nunito', sans-serif;
+
+        font-weight: 700;
+        padding-left: 10px;
+    }
+
+    .form-field select {
+        width: 101% !important;
+    }
+
+    form.form p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .submit input {
+        display: block;
+        padding: 6px 12px !important;
+        margin: 20px 5px 35px !important;
+        text-align: left;
+        white-space: nowrap;
+        /* vertical-align: middle; */
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 0 !important;
+        width: auto !important;
+        font-size: 18px !important;
+        font-family: Nunito,  !important;
+        font-weight: 400 !important;
+        line-height: 1.3333333 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    form.form p.submit {
+        margin: 0;
+        padding: 0;
+    }
+
+    form.form p {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-size: 1.2rem;
+        margin-bottom: 0 !important;
+    }
+
+    p.pd-text label,
+    p.pd-select label,
+    p.pd-textarea label {
+        display: inline-block !important;
+        font-weight: 700;
+    }
+
+    p.chkbxStyle span {
+        width: 100%;
+        display: block;
+        margin: 20px 0;
+    }
+
+    p.chkbxStyle span label {
+        margin-left: 10px;
+        font-weight: 700;
+    }
+
+    .descStyle {
+        padding-left: 5%;
+        margin-top: -15px !important;
+        font-weight: 400 !important;
+    }
+
+    .opt-inBox label {
+        font-style: italic;
+        font-size: 1.1em !important;
+        font-weight: 400 !important;
+    }
+
+    p.email input {
+        margin-bottom: 0px !important;
+    }
+
+    .donBTN {
+        font-size: 32px !important;
+        font-weight: 700 !important;
+        background-color: #0e2f86 !important;
+        border-color: #0e2f86 !important;
+    }
+
+    .titleIMG {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    #top-banner {
+        height: 350px;
+        /* width: 100%; */
+        background: url(https://cdn.mrc.org/static/censortrack/BlueHeaderBanner%20%281%29.png) no-repeat;
+        background-size: cover;
+        /* background-position: center; */
+    }
+
+    #mrc-banner img {
+        max-width: 600px;
+        max-height: 85px;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    #donbox.sticky-top,
+    #petbox.sticky-top {
+        top: 1em
+    }
+
+    .mktoContent,
+    .mktoForm {
+        font-family: inherit !important
+    }
+
+    .blue-txt {
+        color: #002f87 !important
+    }
+
+    .mktoContent {
+        font-size: inherit !important
+    }
+
+    #mrc-banner,
+    footer {
+        background: #1b1c34;
+    }
+
+    #mrc-banner {
+        background: #fff;
+        /* border-bottom: 1px solid #002b7b */
+    }
+
+    footer {
+        color: #FFF;
+        padding: 10px 0;
+        font-size: .83rem;
+        text-align: center;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    footer a:active,
+    footer a:hover,
+    footer a:link,
+    footer a:visited {
+        font-weight: bold;
+        color: white
+    }
+
+    #top-banner {
+        margin-bottom: -4.5rem
+    }
+
+    .page-title {
+        color: #FFF;
+        padding-bottom: 1rem
+    }
+
+    .page-title-sm {
+        color: #002F87;
+        padding-bottom: 1rem
+    }
+
+    .top-img>img {
+        max-height: 370px
+    }
+
+    .txt-page .top-img {
+        position: inherit
+    }
+
+    .txt-page .top-img>img {
+        max-height: 370px;
+        margin: 0;
+        float: left
+    }
+
+    #donbox,
+    #petbox {
+        margin-bottom: 20px
+    }
+
+    .card.card-blue,
+    .card.card-gold {
+        border: 0;
+        border-radius: 0
+    }
+
+    .card-blue .card-header,
+    .card.card-gold .card-header {
+        background-color: #1b1c34;
+        color: #FFF;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 300;
+        border: 1px solid #00369c;
+        border-radius: 0 !important;
+        border-bottom: none;
+    }
+
+    .card.card-gold .card-header {
+        background-color: #C9920E;
+        border-color: #b9860d
+    }
+
+    .card-blue .card-body,
+    .card-gold .card-body {
+        background-color: #f1f1f1;
+        border: 1px solid #dedede;
+        border-top: none
+    }
+
+    .sub-title {
+        font-weight: 400;
+        color: #002f87
+    }
+
+    .sep {
+        border-bottom: 1px solid #002f87;
+        width: 100%;
+        margin: 0 15px 15px
+    }
+
+    .share-text {
+        display: inline-block;
+        margin: 0;
+        font-size: 20px
+    }
+
+    .sumome-share-client-wrapper {
+        display: inline-block !important
+    }
+
+    .page-don,
+    .page-form {
+        margin-bottom: 25px
+    }
+
+    .mktoForm .mktoOffset {
+        float: left;
+        height: 0 !important;
+        width: 10px
+    }
+
+    .mktoForm {
+        width: 100% !important;
+        font-size: inherit !important
+    }
+
+    .mktoForm .mktoLabel {
+        width: auto !important;
+        margin-bottom: 5px;
+        font-weight: 500
+    }
+
+    .mktoForm input[type=date],
+    .mktoForm input[type=email],
+    .mktoForm input[type=number],
+    .mktoForm input[type=tel],
+    .mktoForm input[type=text],
+    .mktoForm input[type=url],
+    .mktoForm select.mktoField,
+    .mktoForm textarea.mktoField {
+        width: 100% !important;
+        display: block;
+        padding: .375rem .75rem !important;
+        font-size: 1rem;
+        line-height: 1.5 !important;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+    }
+
+    .mktoFieldWrap,
+    .mktoFormCol {
+        width: 100% !important
+    }
+
+    .mktoForm.mktoLayoutAbove .mktoCheckboxList,
+    .mktoForm.mktoLayoutAbove .mktoRadioList {
+        width: auto !important;
+        float: left !important;
+        clear: none !important
+    }
+
+    .mktoForm .mktoCheckboxList>input,
+    .mktoForm .mktoRadioList>input {
+        margin-top: 6px
+    }
+
+    .mktoButtonRow {
+        display: block;
+        text-align: center !important
+    }
+
+    .mktoForm .mktoButtonWrap.mktoMinimal .mktoButton {
+        border: 0 !important;
+        border-radius: 0 !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        font: inherit !important;
+        padding: 8px 25px 9px !important;
+        text-align: center !important;
+        text-shadow: none !important;
+        width: initial !important;
+        text-transform: uppercase !important;
+        font-weight: 500 !important
+    }
+
+    .mktoButtonWrap {
+        margin: 0 !important
+    }
+
+    #main-idonate {
+        width: 1px !important;
+        min-width: 100% !important
+    }
+
+    @media (max-width:767px) {
+        .top-img>img {
+            margin-left: 0
+        }
+
+        .txt-page .top-img>img {
+            float: none
+        }
+
+        .top-img {
+            text-align: center;
+            position: initial
+        }
+    }
+
+    @media (min-width:768px) {
+        #top-banner {
+            min-height: 310px;
+            background-size: contain;
+        }
+
+        .top-img {
+            position: absolute;
+            bottom: 0;
+        }
+
+        #donbox,
+        #petbox {
+            margin-right: -30px
+        }
+
+        #petbox-split {
+            margin-top: -25%
+        }
+    }
+
+    @media (min-width:1375px) {
+        .txt-page .top-img>img {
+            margin: 0
+        }
+    }
+</style>
+
+<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet" />
+<div class="container-fluid p-0 mktoText" id="Main_Body" mktoname="Main Body">
+    <div id="mrc-banner">
+        <div class="container"><img alt="MRC | America's Media Watchdog" class="img-fluid"
+                src="https://cdn.mrc.org/static/censortrack/FreeSpeechAmericaCensortrackLogo.png" /></div>
+    </div>
+
+    <div class="alert alert-danger alert-dismissible m-0 d-none container-fluid text-center" id="ieAlert" role="alert">
+        <div class="container p-0">We noticed you&#39;re using an older version of Internet Explorer.<br />
+            For optimal performance, it is recommended to use <a alt="Download Google Chrome" class="alert-link"
+                href="https://www.google.com/chrome/">Google Chrome</a> or <a alt="Download Microsoft Edge"
+                class="alert-link" href="https://www.microsoft.com/edge">Microsoft Edge</a>.<button aria-label="Close"
+                class="close" data-dismiss="alert" type="button"><span aria-hidden="true">&times;</span></button></div>
+    </div>
+
+    <div class="position-relative" id="top-banner">
+        <div class="container">
+            <div class="">
+                <!-- <div class="top-img order-2 col-md-7 d-none d-md-block"><img alt="" class="d-block mx-auto"
+                        src="" />
+                </div> -->
+                <!-- <div class="censortrackCaseTotal">
+                    <script src="https://cdn.mrc.org/static/js_assets/censortrackcasetotal.js"></script>
+                </div> -->
+                <div class="censortrackCaseTotal">
+                    <div class="totalCases">
+                        <div class="totalCases--body">
+                            <p style="font-family: 'Nunito', sans-serif; margin-bottom: 0;">CensorTrack Database</p>
+                            <p style="font-family: 'Nunito', sans-serif; margin-bottom: 0;">Current Number of Confirmed Cases</p>
+                            <div class="totalCases--body--number">
+                                <div class="totalCases--body--number--cell "><span>3</span>
+                                    <!-- <div class="totalCases--body--number--cell--middleLine"></div> -->
+                                    <div class="totalCases--body--number--cell--smallBox right"></div>
+                                    <div class="totalCases--body--number--cell--smallBox left"></div>
+                                </div>
+                                <div class="totalCases--body--number--comma"><span>,</span></div>
+                                <div class="totalCases--body--number--cell "><span>4</span>
+                                    <!-- <div class="totalCases--body--number--cell--middleLine"></div> -->
+                                    <div class="totalCases--body--number--cell--smallBox right"></div>
+                                    <div class="totalCases--body--number--cell--smallBox left"></div>
+                                </div>
+                                <div class="totalCases--body--number--cell "><span>0</span>
+                                    <!-- <div class="totalCases--body--number--cell--middleLine"></div> -->
+                                    <div class="totalCases--body--number--cell--smallBox right"></div>
+                                    <div class="totalCases--body--number--cell--smallBox left"></div>
+                                </div>
+                                <div class="totalCases--body--number--cell "><span>1</span>
+                                    <!-- <div class="totalCases--body--number--cell--middleLine"></div> -->
+                                    <div class="totalCases--body--number--cell--smallBox right"></div>
+                                    <div class="totalCases--body--number--cell--smallBox left"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 order-md-3 position-static"><img class="titleIMG img-fluid d-md-none d-block mb-4"
+                        src="https://cdn.mrc.org/U/C/2020/JAN/LEVIN/MarkLevin_LandingPage_TText.png" />
+                    <div class="card card-blue sticky-top" id="donbox" pardot-region="donationBox">
+                        <div class="card-header">Sign up to Learn More!</div>
+
+                        <div class="card-body">
+                            <script src='https://embed.idonate.com/idonate.js'></script><iframe allowtransparency="true"
+                                frameborder="0" id="pardotForm" src="https://info.mrc.org/l/752103/2019-12-19/k4d34"
+                                style="border: 0" type="text/html" width="99%"></iframe>
+
+                            <div class="mb-2 mt-3"><a href="https://www.mrc.org/mrcsticker-1st" target="_blank"><img
+                                        class="img-fluid"
+                                        src="https://cdn.mrc.org/U/C/RADIO/2021BumperSticker_LPImage.png" /> </a>
+
+                                <h3 class="text-center mt-2"><a href="https://www.mrc.org/mrcsticker-1st"
+                                        target="_blank">Get your free sticker here!</a></h3>
+                                <a href="https://www.mrc.org/mrcsticker-1st" target="_blank"> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 order-md-2" pardot-region="mainBody">
+                    <h2 style="color: black;">Welcome to the MRC and Free Speech America!</h2>
+                    <p>The Media Research Center has led the fight against media bias for 30 years, but three years ago
+                        we also launched FREE SPEECH AMERICA to lead the charge against censorship of conservatives by
+                        Facebook, Twitter, Amazon, Google, YouTube, and others.</p>
+
+                    <p>Big Tech has waged war against conservatives, going as far as suspending and banning former
+                        President Donald Trump from many platforms. If this can happen to the President, it can
+                        happen to any one of us. We must protect free speech and let them know we will not be silenced!
+                    </p>
+
+                    <a href="https://censortrack.org/" class="ct-button">Visit CensorTrack.org</a>
+
+
+                    <div class="articles">
+                        <h3>Tech Censorship Story of the Week</h3>
+                        <div class="article1">
+                            <tr class="article" pardot-repeatable="">
+                                <td class="two-column"
+                                    style="padding-top:0;padding-right:0;padding-left:0;margin-bottom:10px;text-align:center;font-size:0;padding-bottom:15px;">
+                                    <!--[if (gte mso 9)|(IE)]>
+                            <table width="100%" style="border-spacing:0;font-family:Verdana,Geneva,sans-serif;color:#333e48;" >
+                            <tr>
+                            <td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                            <![endif]-->
+                                    <!-- <div class="column"
+                                        style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
+                                        <table
+                                            style="border-spacing:0;font-family:Verdana,Geneva,sans-serif;color:#333e48;"
+                                            width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="inner"
+                                                        style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">
+                                                        <table class="contents"
+                                                            style="border-spacing:0;font-family:Verdana,Geneva,sans-serif;color:#333e48;width:100%;font-size:16px;line-height:25px;text-align:left;">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td
+                                                                        style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                                                                        <a href="https://placeholder.com/"
+                                                                            target="_blank">
+                                                                            <img alt="[[TITLE]]"
+                                                                                src="https://via.placeholder.com/150x100C/O%20https://placeholder.com/"
+                                                                                style="border-width:0;width:100%;max-width:280px;height:auto;"
+                                                                                width="280" />
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="inner"
+                                                                        style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">
+                                                                        <table class="contents"
+                                                                            style="border-spacing:0;font-family:Verdana,Geneva,sans-serif;color:#333e48;width:100%;font-size:16px;line-height:25px;text-align:left;">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class="text"
+                                                                                        style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                                                                                        <a style="text-decoration:none;color:#333e48!important;"
+                                                                                            href="[[LINK]]"
+                                                                                            target="_blank">
+                                                                                            <h3 class="title"
+                                                                                                style="font-family:Helvetica Neue,Helvetica,Arial,sans-serif!important;color:#333e48!important;margin-top:0;">
+                                                                                                [[TITLE]]</h3>
+                                                                                        </a>
+
+                                                                                        <p class="authorDate"
+                                                                                            style="Margin:0;font-family:Helvetica Neue,Helvetica,Arial,sans-serif!important;font-style:italic;color:#333e48;padding-bottom:20px;">
+                                                                                            By <span
+                                                                                                style="font-family:Helvetica Neue,Helvetica,Arial,sans-serif!important;font-style:italic;color:#002f87;font-weight:700;">[[AUTHOR]]</span>
+                                                                                            | [[DATE]]</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div> -->
+                                    <!--[if (gte mso 9)|(IE)]>
+                            </td><td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                            <![endif]-->
+
+                                    <!-- <div class="column"
+                                        style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
+                                        <table
+                                            style="border-spacing:0;font-family:Verdana,Geneva,sans-serif;color:#333e48;"
+                                            width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="inner"
+                                                        style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;">
+                                                        <table class="contents"
+                                                            style="border-spacing:0;font-family:Verdana,Geneva,sans-serif;color:#333e48;width:100%;font-size:16px;line-height:25px;text-align:left;">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="text"
+                                                                        style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                                                                        <a style="text-decoration:none;color:#333e48!important;"
+                                                                            href="[[LINK]]" target="_blank">
+                                                                            <h3 class="title"
+                                                                                style="font-family:Helvetica Neue,Helvetica,Arial,sans-serif!important;color:#333e48!important;margin-top:0;">
+                                                                                [[TITLE]]</h3>
+                                                                        </a>
+
+                                                                        <p class="authorDate"
+                                                                            style="Margin:0;font-family:Helvetica Neue,Helvetica,Arial,sans-serif!important;font-style:italic;color:#333e48;padding-bottom:20px;">
+                                                                            By <span
+                                                                                style="font-family:Helvetica Neue,Helvetica,Arial,sans-serif!important;font-style:italic;color:#002f87;font-weight:700;">[[AUTHOR]]</span>
+                                                                            | [[DATE]]</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div> -->
+                                    <!--[if (gte mso 9)|(IE)]>
+                            </td>
+                            </tr>
+                            </table>
+                        <![endif]-->
+                                </td>
+                            </tr>
+                        </div>
+                    </div>
+
+                    <h3 class="pt-4" style="color: black;">What Can I Do?</h3>
+
+                    <ul>
+                        <li><a href="https://censortrack.org/about#Subscribe" target="_blank"><strong>Sign up for the
+                                    Free Speech America Newsletter</strong></a> to stay up-to-date on the latest tech
+                            trends and efforts to punish conservatives for daring to oppose Big Tech&rsquo;s progressive
+                            agenda.</li>
+                        <li><a href="https://www.mrc.org/action" target="_blank"><strong>Join MRC Action</strong></a> to
+                            learn when YOU can step up and combat Big Tech and media bias.</li>
+                        <li><span><a href="https://censortrack.org" target="_blank"><strong>Visit and share
+                                        CensorTrack.org</strong></a>, the most
+                                comprehensive online database documenting Big Tech censorship.</span></li>
+                        <li><a href="https://www.mrc.org/freespeechalliance" target="_blank"><strong>Learn about the
+                                    Free Speech Alliance</strong></a>, a group of more than 70 organizations led by the
+                            MRC that have banded together to fight Big Tech censorship.</li>
+                        <li><a href="https://censortrack.org/about#Donate" target="_blank"><strong>Donate to Free Speech
+                                    America</strong></a> and be a part of the effort to rein in the leftist tech
+                            companies.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container text-center">
+            <a href="https://www.mrc.org/freespeechalliance" target="_blank"><img class="mb-3" height="100"
+                    src="https://cdn.mrc.org/static/censortrack/MRC-FSA-Logo.png" /></a>
+            <p>The mission of the <a href="http://www.mrc.org/" target="_blank">Media Research Center</a> is to create a
+                media culture in America where truth and liberty flourish. The MRC is a research and education
+                organization operating under <a href="http://www.mrc.org/about" target="_blank">Section 501(c)(3)</a> of
+                the Internal Revenue Code, and <a href="https://www.mrc.org/donate" target="_blank">contributions</a> to
+                the MRC are tax-deductible.</p>
+
+            <p><a href="http://www.mrc.org/privacy-policy">Privacy Policy</a>&nbsp;|&nbsp;<a
+                    href="http://www.mrc.org/terms-of-use-agreement">Terms of Use Agreement</a></p>
+
+            <p>&copy;Copyright 2020, Media Research Center | All Rights Reserved</p>
+        </div>
+    </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.mrc.org/U/OP/IT/iframeResizer.min.js"></script>
+<script type="text/javascript">
+    iFrameResize({ checkOrigin: false, heightCalculationMethod: 'lowestElement' }, '#pardotForm');
+
+    var loc = window.location.toString();
+    params = loc.split('?')[1];
+    iframe = document.getElementById('pardotForm');
+    if (params) { iframe.src = iframe.src + '?' + params; }
+
+    window.addEventListener("message", function (event) {
+        if (event.data === 'pardotFormSubmitted') {
+            // fbq('track', 'CompleteRegistration');  //FACEBOOK CONVERSION TRACKING
+            // gtag('event', 'conversion', {'send_to': 'AW-948800600/gHnXCK20xYkBENiYtsQD'});
+        }
+    });
+
+</script>
+
+<!-- Header -->
+<!-- https://cdn.mrc.org/static/censortrack/FreeSpeechAmericaCensortrackLogo.png -->
+
+<!-- Footer -->
+<!-- https://cdn.mrc.org/static/censortrack/MRC-FSA-Logo.png -->
