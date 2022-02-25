@@ -49,14 +49,16 @@
 
     .totalCases {
         border-radius: .5rem;
-        /* box-shadow: 0px 4px 4px rgba(66, 47, 47, 0.25); */
+        box-shadow: 0px 4px 4px rgba(66, 47, 47, 0.25);
         text-align: center;
-        padding: 3rem 1rem;
-        position: relative;
+        /* padding: 1rem; */
+        position: absolute;
+        bottom: 0;
+        margin: 0 auto;
         overflow: hidden;
     }
 
-    .totalCases--body {
+    /* .totalCases--body {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -74,9 +76,9 @@
         display: grid;
         grid-template-columns: 2rem 0.5rem 2rem 2rem 2rem;
         column-gap: 0.4rem;
-    }
+    } */
 
-    .totalCases--body--number--cell {
+    /* .totalCases--body--number--cell {
         width: 2rem;
         height: 2.5rem;
         position: relative;
@@ -84,7 +86,7 @@
         justify-content: center;
         align-items: center;
         background: linear-gradient(0deg, #ccc 0%, #fbfbfb 15%, #fbfbfb 85%, #ccc 100%);
-    }
+    } */
 
     /* .totalCases--body--number--cell--middleLine {
         position: absolute;
@@ -97,7 +99,7 @@
         z-index: 1;
     } */
 
-    .totalCases--body--number--cell--smallBox right {
+    /* .totalCases--body--number--cell--smallBox right {
         width: 4px;
         position: absolute;
         content: "";
@@ -142,9 +144,9 @@
         position: absolute;
         left: 0;
         top: 3px;
-    }
+    } */
 
-    ::after {
+    /* ::after {
         background-image: url("https://censortrack.org/themes/custom/censortrack/images/ProfileCountBG.png");
         background-size: cover;
         background-position: center;
@@ -154,7 +156,7 @@
         right: 0;
         position: absolute;
         z-index: -1;
-    }
+    } */
 
     .ct-button {
         display: block;
@@ -175,10 +177,10 @@
 
 
     .censortrackCaseTotal {
-        width: 100%;
-        max-height: 310px;
-        margin: 0 auto;
-        font-size: 50px;
+        /* width: 100%; */
+        /* max-height: 310px; */
+        /* margin: 0 auto; */
+        /* font-size: 50px; */
     }
 
     .ct-button:hover {
@@ -354,7 +356,7 @@
     }
 
     #top-banner {
-        height: 350px;
+        height: 310px;
         /* width: 100%; */
         background: url(https://cdn.mrc.org/static/censortrack/BlueHeaderBanner%20%281%29.png) no-repeat;
         background-size: cover;
@@ -650,40 +652,40 @@
                 <!-- <div class="top-img order-2 col-md-7 d-none d-md-block"><img alt="" class="d-block mx-auto"
                         src="" />
                 </div> -->
-                <!-- <div class="censortrackCaseTotal">
-                    <script src="https://cdn.mrc.org/static/js_assets/censortrackcasetotal.js"></script>
-                </div> -->
                 <div class="censortrackCaseTotal">
+                    <script src="https://cdn.mrc.org/static/js_assets/censortrackcasetotal.js"></script>
+                </div>
+                <!-- <div class="censortrackCaseTotal">
                     <div class="totalCases">
                         <div class="totalCases--body">
                             <p style="font-family: 'Nunito', sans-serif; margin-bottom: 0;">CensorTrack Database</p>
                             <p style="font-family: 'Nunito', sans-serif; margin-bottom: 0;">Current Number of Confirmed Cases</p>
                             <div class="totalCases--body--number">
                                 <div class="totalCases--body--number--cell "><span>3</span>
-                                    <!-- <div class="totalCases--body--number--cell--middleLine"></div> -->
+                                    <div class="totalCases--body--number--cell--middleLine"></div>
                                     <div class="totalCases--body--number--cell--smallBox right"></div>
                                     <div class="totalCases--body--number--cell--smallBox left"></div>
                                 </div>
                                 <div class="totalCases--body--number--comma"><span>,</span></div>
                                 <div class="totalCases--body--number--cell "><span>4</span>
-                                    <!-- <div class="totalCases--body--number--cell--middleLine"></div> -->
+                                    <div class="totalCases--body--number--cell--middleLine"></div>
                                     <div class="totalCases--body--number--cell--smallBox right"></div>
                                     <div class="totalCases--body--number--cell--smallBox left"></div>
                                 </div>
                                 <div class="totalCases--body--number--cell "><span>0</span>
-                                    <!-- <div class="totalCases--body--number--cell--middleLine"></div> -->
+                                    <div class="totalCases--body--number--cell--middleLine"></div>
                                     <div class="totalCases--body--number--cell--smallBox right"></div>
                                     <div class="totalCases--body--number--cell--smallBox left"></div>
                                 </div>
                                 <div class="totalCases--body--number--cell "><span>1</span>
-                                    <!-- <div class="totalCases--body--number--cell--middleLine"></div> -->
+                                    <div class="totalCases--body--number--cell--middleLine"></div>
                                     <div class="totalCases--body--number--cell--smallBox right"></div>
                                     <div class="totalCases--body--number--cell--smallBox left"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -691,8 +693,7 @@
     <div id="main-body">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 order-md-3 position-static"><img class="titleIMG img-fluid d-md-none d-block mb-4"
-                        src="https://cdn.mrc.org/U/C/2020/JAN/LEVIN/MarkLevin_LandingPage_TText.png" />
+                <div class="col-md-6 order-md-3 position-static">
                     <div class="card card-blue sticky-top" id="donbox" pardot-region="donationBox">
                         <div class="card-header">Sign up to Learn More!</div>
 
@@ -738,7 +739,7 @@
                             <tr>
                             <td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
                             <![endif]-->
-                                    <!-- <div class="column"
+                                    <div class="column"
                                         style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
                                         <table
                                             style="border-spacing:0;font-family:Verdana,Geneva,sans-serif;color:#333e48;"
@@ -755,10 +756,10 @@
                                                                         style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
                                                                         <a href="https://placeholder.com/"
                                                                             target="_blank">
-                                                                            <img alt="[[TITLE]]"
-                                                                                src="https://via.placeholder.com/150x100C/O%20https://placeholder.com/"
-                                                                                style="border-width:0;width:100%;max-width:280px;height:auto;"
-                                                                                width="280" />
+                                                                            <img alt=""
+                                                                                src="https://cdn.newsbusters.org/styles/donta_fsa/s3/2022-02/2022-02-22.jpeg?itok=v2SmpteZ"
+                                                                                style="position: absolute;border-width:0;width:100%;max-width:200px;height:auto;"
+                                                                                width="200" />
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -775,12 +776,12 @@
                                                                                             href="[[LINK]]"
                                                                                             target="_blank">
                                                                                             <h3 class="title"
-                                                                                                style="font-family:Helvetica Neue,Helvetica,Arial,sans-serif!important;color:#333e48!important;margin-top:0;">
+                                                                                                style="position:absoulute;margin-left:13rem;font-family:Helvetica Neue,Helvetica,Arial,sans-serif!important;color:#333e48!important;margin-top:0;">
                                                                                                 [[TITLE]]</h3>
                                                                                         </a>
 
                                                                                         <p class="authorDate"
-                                                                                            style="Margin:0;font-family:Helvetica Neue,Helvetica,Arial,sans-serif!important;font-style:italic;color:#333e48;padding-bottom:20px;">
+                                                                                            style="position:absolute; margin-left: 13rem;font-family:Helvetica Neue,Helvetica,Arial,sans-serif!important;font-style:italic;color:#333e48;padding-bottom:20px;">
                                                                                             By <span
                                                                                                 style="font-family:Helvetica Neue,Helvetica,Arial,sans-serif!important;font-style:italic;color:#002f87;font-weight:700;">[[AUTHOR]]</span>
                                                                                             | [[DATE]]</p>
@@ -796,7 +797,7 @@
                                                 </tr>
                                             </tbody>
                                         </table>
-                                    </div> -->
+                                    </div>
                                     <!--[if (gte mso 9)|(IE)]>
                             </td><td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
                             <![endif]-->
@@ -847,7 +848,7 @@
                         </div>
                     </div>
 
-                    <h3 class="pt-4" style="color: black;">What Can I Do?</h3>
+                    <h3 class="pt-4" style="margin-top: 3rem;color: black;">What Can I Do?</h3>
 
                     <ul>
                         <li><a href="https://censortrack.org/about#Subscribe" target="_blank"><strong>Sign up for the
@@ -898,6 +899,11 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 <script src="https://cdn.mrc.org/U/OP/IT/iframeResizer.min.js"></script>
+<script src="./storyscript.js"></script>
+<!-- <script src="">
+    fetch('https://newsbusters.org/api/fsarecent?_format=json')
+        .then
+</script> -->
 <script type="text/javascript">
     iFrameResize({ checkOrigin: false, heightCalculationMethod: 'lowestElement' }, '#pardotForm');
 
