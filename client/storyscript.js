@@ -5,9 +5,10 @@
 // }
 
 // updateStory();
-// imageLink = imageLink.includes("/s3/files")
-//   ? `https://newsbusters.org${imageLink}`
-//   : imageLink;
+let imageLink = imageLink.includes("/s3/files")
+  ? `https://newsbusters.org${imageLink}`
+  : imageLink;
+
 fetch("https://newsbusters.org/api/fsarecent")
   .then((data) => {
     //   console.log(data);
@@ -30,7 +31,7 @@ fetch("https://newsbusters.org/api/fsarecent")
                                         <tr>
                                             <td><a class="article-link" href=${values.link}
                                                     target="_blank"><img alt=""
-                                                        src=${values.image}> </a>
+                                                        src="${values.imageLink}"> </a>
                                             </td>
                                         </tr>
                                     </tbody>
