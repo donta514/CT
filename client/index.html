@@ -41,7 +41,33 @@
     }
 
     #articles {
-        margin-left: 1.5rem;
+        display: grid;
+        row-gap: 2rem;
+    }
+
+    #articles .articles--item {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        column-gap: 1rem;
+    }
+
+    #articles .articles--item--content {
+        display: flex;
+        flex-direction: column;
+        row-gap: .5rem;
+    }
+
+    #articles .articles--item--content--title {
+        text-decoration: none;
+        color: #212529;
+        font-weight: bold;
+        font-size: 1.125rem;
+        font-family: Nunito, sans-serif;
+    }
+
+    #articles .articles--item--content--meta {
+        font-family: Nunito, sans-serif;
+        color: #2226ce;
     }
 
     .two-column {
@@ -157,7 +183,7 @@
     .ct-button:hover {
         background-color: #fff;
         text-decoration: none;
-        border: solid 1px #2226ce;
+        border: solid 2px #2226ce;
         color: #2226ce;
     }
 
@@ -696,7 +722,7 @@
                     President Donald Trump from many platforms. If this can happen to the President, it can
                     happen to any one of us. We must protect free speech and let them know we will not be silenced!
                 </p>
-                <a style="color: #fff;" class="ct-button" href="https://censortrack.org/">Visit CensorTrack.org</a>
+                <a class="ct-button" href="https://censortrack.org/">Visit CensorTrack.org</a>
 
 
                 <h2 class="pt-4" style="color: black; padding-bottom: 2rem;">Tech Censorship Story of the Week</h2>

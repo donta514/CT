@@ -46,7 +46,6 @@ fetch("https://newsbusters.org/api/fsarecent")
             </div>
         `;
       const doc = parser.parseFromString(itemTemplate, "text/html").body.childNodes[0];
-      console.log(doc);
       articles.appendChild(doc)
     })
     //   stories += `<tr class="article" pardot-repeatable="">
